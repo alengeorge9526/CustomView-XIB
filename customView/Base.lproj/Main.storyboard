@@ -26,10 +26,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQV-Tx-a9U">
-                                <rect key="frame" x="8" y="40" width="48" height="35"/>
+                                <rect key="frame" x="8" y="40" width="48" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" image="power.circle" catalog="system">
+                                    <color key="baseForegroundColor" red="0.84215241669999996" green="0.89148229359999998" blue="0.9371047616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="ctJ-uc-cOg" kind="presentation" modalPresentationStyle="fullScreen" id="ckg-nc-2Dh"/>
@@ -68,7 +68,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="75" id="ccW-8p-8Fy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="ccW-8p-8Fy">
                                         <rect key="frame" x="0.0" y="50" width="345" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ccW-8p-8Fy" id="gc3-wo-uhw">
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbj-KW-mat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3107.6335877862593" y="17.605633802816904"/>
+            <point key="canvasLocation" x="1758" y="881"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="4WL-kQ-Ntq">
@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJ2-z7-umt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="671"/>
+            <point key="canvasLocation" x="401" y="693"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jvj-HH-dgs">
@@ -188,10 +188,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c5d-Dv-hnL"/>
+        <segue reference="0hb-Ma-C5m"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="power.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
