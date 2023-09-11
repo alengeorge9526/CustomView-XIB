@@ -11,7 +11,7 @@ class tableViewController: UIViewController{
     
     @IBOutlet weak var tableView: UITableView!
     
-    var Strings:[String] = ["apple","orange","mango","banana"]
+    var fruits:[String] = ["apple","orange","mango","banana"]
     var images:[String] = ["apple","orange","mango","banana"]
     
     override func viewDidLoad() {
@@ -24,11 +24,11 @@ class tableViewController: UIViewController{
 extension tableViewController:UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Strings.count
+        return fruits.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: customTableView.id, for: indexPath) as! customTableView
-        cell.tableLabel?.text = Strings[indexPath.row]
+        cell.tableLabel?.text = fruits[indexPath.row]
         let image = images[indexPath.row]
         cell.tableImage.image = UIImage(named: image)
         return cell
@@ -39,7 +39,7 @@ extension tableViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let contentViewController = storyboard.instantiateViewController(withIdentifier: "tableCell")
-        contentViewController.navigationItem.title = Strings[indexPath.row]
+        contentViewController.navigationItem.title = fruits[indexPath.row]
         navigationController?.pushViewController(contentViewController, animated: true)
         if let imageView = contentViewController.view.viewWithTag(123) as? UIImageView {
             let image = images[indexPath.row]
