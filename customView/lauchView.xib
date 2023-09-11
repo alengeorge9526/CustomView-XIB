@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="lauchView" customModule="customView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="324"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10G-Bw-fR5" customClass="lauchView" customModule="customView" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
+                    <rect key="frame" x="0.0" y="0.0" width="377" height="324"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro.gif" translatesAutoresizingMaskIntoConstraints="NO" id="mMD-ZY-XOK">
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="324"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mMD-ZY-XOK" firstAttribute="leading" secondItem="10G-Bw-fR5" secondAttribute="leading" id="A5j-np-5xI"/>
+                        <constraint firstItem="mMD-ZY-XOK" firstAttribute="top" secondItem="10G-Bw-fR5" secondAttribute="top" id="Bdz-ss-IA6"/>
+                        <constraint firstAttribute="bottom" secondItem="mMD-ZY-XOK" secondAttribute="bottom" id="IAb-IA-RFt"/>
+                        <constraint firstAttribute="trailing" secondItem="mMD-ZY-XOK" secondAttribute="trailing" id="jMq-BZ-HPr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="labelColor"/>
+            <constraints>
+                <constraint firstItem="10G-Bw-fR5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BaL-1A-fRu"/>
+                <constraint firstItem="10G-Bw-fR5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MRq-jn-VFb"/>
+                <constraint firstAttribute="trailing" secondItem="10G-Bw-fR5" secondAttribute="trailing" id="VmJ-XC-T6y"/>
+                <constraint firstAttribute="bottom" secondItem="10G-Bw-fR5" secondAttribute="bottom" id="Vvw-ha-vet"/>
+                <constraint firstItem="10G-Bw-fR5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bax-Fm-Bdj"/>
+                <constraint firstItem="10G-Bw-fR5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fPF-Sx-zTK"/>
+                <constraint firstAttribute="bottom" secondItem="10G-Bw-fR5" secondAttribute="bottom" id="lDH-9M-oet"/>
+                <constraint firstItem="10G-Bw-fR5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vG4-yS-bHn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ContainerView" destination="10G-Bw-fR5" id="2Gd-uZ-Nzf"/>
+                <outlet property="launchImage" destination="mMD-ZY-XOK" id="xo5-SL-WX6"/>
+            </connections>
+            <point key="canvasLocation" x="527.48091603053433" y="38.380281690140848"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="intro.gif" width="800" height="600"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
